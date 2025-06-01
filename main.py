@@ -10,7 +10,7 @@ headers = {
 base_url = "https://www.transfermarkt.com/spieler-statistik/wertvollstespieler/marktwertetop?page={}&land_id=0&ausrichtung=Sturm&spielerposition_id=alle&altersklasse=alle&jahrgang=0&kontinent_id=0&plus=1"
 players = []
 
-for page in range(1, 50):
+for page in range(1, 25):
     print(f"Fetching page {page}...")
     url = base_url.format(page)
     res = requests.get(url, headers=headers)
